@@ -9,12 +9,20 @@ export const AuthTemplate: React.FC<AuthTemplateProps> = ({
   title,
   children,
 }) => (
-  <Container maxW="md" centerContent py={10}>
-    <VStack spacing={8} width="100%">
-      <Heading as="h1" size="2xl" textAlign="center">
+  <Container
+    maxW="100%"
+    centerContent
+    py={10}
+    display="flex"
+    justifyContent="center"
+    alignItems="center"
+    height="100vh"
+  >
+    <VStack spacing={10} width="100%" maxW="xl">
+      <Heading as="h1" size="3xl" textAlign="center">
         {title}
       </Heading>
-      <Box width="100%" p={8} borderRadius="xl" bg="gray.700">
+      <Box width="100%" p={12} borderRadius="xl" bg="gray.700">
         {children}
       </Box>
     </VStack>
