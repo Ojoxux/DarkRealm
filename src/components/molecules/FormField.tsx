@@ -12,7 +12,9 @@ export const FormField: React.FC<FormFieldProps> = ({
   ...rest
 }) => (
   <FormControl {...rest}>
-    <FormLabel fontWeight="medium">{label}</FormLabel>
+    <FormLabel fontWeight="bold" fontSize="sm" mb={1}>
+      {label}
+    </FormLabel>
     <CustomInput {...inputProps} />
   </FormControl>
 );
