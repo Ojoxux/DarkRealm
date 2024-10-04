@@ -9,14 +9,14 @@ export const AuthTemplate: React.FC<AuthTemplateProps> = ({
   title,
   children,
 }) => (
-  <Container maxW="md" centerContent>
-    <Box width="100%" p={8} borderRadius="15px" boxShadow="md" bg="white">
-      <VStack spacing={6}>
-        <Heading as="h1" size="xl">
-          {title}
-        </Heading>
+  <Container maxW="md" centerContent py={10}>
+    <VStack spacing={8} width="100%">
+      <Heading as="h1" size="2xl" textAlign="center">
+        {title}
+      </Heading>
+      <Box width="100%" p={8} borderRadius="xl" bg="gray.700">
         {children}
-      </VStack>
-    </Box>
+      </Box>
+    </VStack>
   </Container>
 );
