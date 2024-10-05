@@ -3,7 +3,7 @@ import { FormField } from "../molecules/FormField";
 import { CustomButton } from "../atoms/CustomButton";
 
 export const LoginForm: React.FC = () => (
-  <VStack spacing={4} align="stretch">
+  <VStack spacing={6} align="stretch">
     <FormField
       label="Email address"
       inputProps={{ placeholder: "Enter your email" }}
@@ -12,13 +12,16 @@ export const LoginForm: React.FC = () => (
       label="Password"
       inputProps={{ type: "password", placeholder: "Password" }}
     />
+    <Text textAlign="right" fontSize="sm" color="gray.100">
+      Forgot Password?
+    </Text>
     <CustomButton size="lg" width="100%">
-      LOG IN
+      Login
     </CustomButton>
     <Text textAlign="center" fontSize="sm">
       Don't have an account?{" "}
       <Link color="brand.500" fontWeight="bold">
-        SIGN UP
+        Sign up
       </Link>
     </Text>
   </VStack>
