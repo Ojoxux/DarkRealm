@@ -1,6 +1,7 @@
 import React from 'react';
 import { Input, InputProps } from '@chakra-ui/react';
 
+// カスタム入力コンポーネント
 export const CustomInput: React.FC<InputProps> = (props) => (
   <Input
     bg="gray.700"
