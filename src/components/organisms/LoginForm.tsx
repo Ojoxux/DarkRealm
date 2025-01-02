@@ -1,16 +1,17 @@
-import { VStack, Text, Link } from "@chakra-ui/react";
-import { FormField } from "../molecules/FormField";
-import { CustomButton } from "../atoms/CustomButton";
+import React from 'react';
+import { VStack, Text, Link } from '@chakra-ui/react';
+import { FormField } from '../molecules/FormField';
+import { CustomButton } from '../atoms/CustomButton';
 
 export const LoginForm: React.FC = () => (
   <VStack spacing={6} align="stretch">
     <FormField
       label="Email address"
-      inputProps={{ placeholder: "Enter your email" }}
+      inputProps={{ placeholder: 'Enter your email' }}
     />
     <FormField
       label="Password"
-      inputProps={{ type: "password", placeholder: "Password" }}
+      inputProps={{ type: 'password', placeholder: 'Password' }}
     />
     <Text textAlign="right" fontSize="sm" color="gray.100">
       Forgot Password?
@@ -19,7 +20,7 @@ export const LoginForm: React.FC = () => (
       Login
     </CustomButton>
     <Text textAlign="center" fontSize="sm">
-      Don't have an account?{" "}
+      Don't have an account?{' '}
       <Link color="brand.500" fontWeight="bold">
         Sign up
       </Link>

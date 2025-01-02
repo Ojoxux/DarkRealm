@@ -1,5 +1,6 @@
-import { FormControl, FormLabel, FormControlProps } from "@chakra-ui/react";
-import { CustomInput } from "../atoms/CustomInput";
+import React from 'react';
+import { FormControl, FormLabel, FormControlProps } from '@chakra-ui/react';
+import { CustomInput } from '../atoms/CustomInput';
 
 interface FormFieldProps extends FormControlProps {
   label: string;

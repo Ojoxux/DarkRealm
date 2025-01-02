@@ -1,4 +1,5 @@
-import { Box, Container, Heading, VStack, Text } from "@chakra-ui/react";
+import React from 'react';
+import { Box, Container, Heading, VStack, Text } from '@chakra-ui/react';
 
 interface AuthTemplateProps {
   title: string;
